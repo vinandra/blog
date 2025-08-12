@@ -3,11 +3,11 @@ import InfoPost from "./InfoPost";
 export default function FeaturedPost() {
   return (
     <article>
-      <div className="flex -mx-4 items-center">
-        <div className="px-4 w-8/12">
+      <div className="flex -mx-4 items-center flex-wrap">
+        <div className="px-4 lg:w-8/12 md:w-7/12 w-full">
           <img src="/featured-tumbnail.png" alt="" className="rounded-xl" />
         </div>
-        <div className="w-4/12 px-4">
+        <div className="lg:w-4/12 md:w-5/12 px-4">
           <InfoPost
             category="New Jeans"
             date="Aug 11, 2025"
