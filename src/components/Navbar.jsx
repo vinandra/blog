@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Container from "./Container";
 
 export default function Navbar() {
   const [dropDown, setDropDown] = useState(false);
@@ -13,7 +14,7 @@ export default function Navbar() {
   ];
   return (
     <nav className="py-10">
-      <div className="container mx-auto">
+      <Container>
         <div className="flex items-center">
           <div className="w-2/12 flex items-center">
             <div className="w-10 h-10 bg-gray-500 rounded flex items-center justify-center mr-4 shadow-2xl">
@@ -21,7 +22,7 @@ export default function Navbar() {
             </div>
             Kpop-list
           </div>
-          <div className="w-8/12">
+          <div className="w-7/12">
             <ul className="space-x-6 flex items-center">
               <li>
                 <a href="#" className="hover:underline">
@@ -82,7 +83,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="w-2/12">
+          <div className="w-3/12">
             <input
               type="text"
               className="bg-gray-700 py-3 px-6 w-full rounded-full bg-search pl-12"
@@ -90,7 +91,7 @@ export default function Navbar() {
             />
           </div>
         </div>
-      </div>
+      </Container>
     </nav>
   );
 }
